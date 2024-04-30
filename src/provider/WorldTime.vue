@@ -14,17 +14,18 @@ watchEffect(async () => {
 
 const getWorldTimeApi = async (ip) => {  
     const fetchTime = await fetch(`http://worldtimeapi.org/api/ip/${ip.ip}`);
-    console.log(await fetchTime.json());
-    return fetchTime;
+    const fetchTimeJson = await fetchTime.json();
+    return fetchTimeJson;
 }
 </script>
 
 <template>
-    <slot>
+    <slot v-if={timeData}>
 
     </slot>
+    <div class="loading" v-else>
+      Loading
+    </div>
 </template>
 
-<style scoped>
-</style>
 

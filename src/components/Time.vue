@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <!-- Your template code here -->
+    <div class="time">
+        
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Time',
-    // Your component options here
-}
+<script setup>
+import { inject } from 'vue';
+
+const time = inject('time')
+console.log(time.value);
+
+
 </script>
 
 <style scoped>

@@ -1,16 +1,16 @@
 <script setup>
 import WorldTime from './provider/WorldTime.vue';
 import Ip from './provider/Ip.vue';
+import Time from './components/Time.vue';
+import { inject } from 'vue';
+
+
 </script>
 
 <template>
   <Ip>
-    <WorldTime>
-      <h1>Clock</h1>
-    </WorldTime>
+    <WorldTime >
+     <Time />
+    </WorldTime> 
   </Ip>
 </template>
-
-<style scoped>
-
-</style>
