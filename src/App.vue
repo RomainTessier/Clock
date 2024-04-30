@@ -1,16 +1,19 @@
 <script setup>
 import WorldTime from './provider/WorldTime.vue';
 import Ip from './provider/Ip.vue';
-import Time from './components/Time.vue';
-import { inject } from 'vue';
-
+import MainView from './MainView.vue';
 
 </script>
 
 <template>
   <Ip>
     <WorldTime >
-     <Time />
+     <MainView />
     </WorldTime> 
   </Ip>
 </template>
+
+<style scoped>
+
+
+</style>
