@@ -3,7 +3,7 @@ import Time from './components/Time.vue';
 </script>
 
 <template>
-    <div class="quoteContainer"></div>
+    <div class="quoteContainer">Quote</div>
     <div class="hourContainer">
         <Time />
     </div>
@@ -30,6 +30,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+}
+
+#app {
+    padding: 25px;
 }
 
 #app > div{

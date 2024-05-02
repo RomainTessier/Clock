@@ -2,7 +2,7 @@
 import { provide, inject, watchEffect, ref } from 'vue'
 
 
-const timeData = ref(null);
+const timeData = ref(false);
 provide('time', timeData);
 
 watchEffect(async () => {
