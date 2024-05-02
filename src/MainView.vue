@@ -10,15 +10,18 @@ import Time from './components/Time.vue';
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;900&display=swap');
 
+*{
+    font-family: 'Inter', sans-serif;
+}
 
 #app{
     height: 100dvh;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/desktop/bg-image-daytime.jpg');
     background-position: center;
     backdrop-filter: brightness(0.5);
-    font-family: 'Inter', sans-serif;
+
 }
 
 body, html{

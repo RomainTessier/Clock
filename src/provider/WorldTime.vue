@@ -2,7 +2,7 @@
 import { provide, inject, watchEffect, ref } from 'vue'
 
 
-const timeData = ref(false);
+const timeData = ref(null);
 provide('time', timeData);
 
 watchEffect(async () => {
@@ -20,7 +20,7 @@ const getWorldTimeApi = async (ip) => {
 </script>
 
 <template>
-    <slot v-if={timeData}>
+    <slot v-if="timeData">
 
     </slot>
     <div class="loading" v-else>
